@@ -17,17 +17,29 @@
             
     </head>
     <body>
-        <header>
-            <h1>Wiki Viewer</h1>
-        </header>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3" id="content" align="center">
+                <form class="form-group">   
+                <header>
+                    <h1>Wiki Viewer</h1>
+                </header>
+                
+                <section id="search">
+                    <button id="wikiSearch" class="btn">Search Wiki</button>
+                    <input id="searchInput" type="text"/>
+                    <button id="wikiRandom" class="btn">Random Article</button>
+                </section>
+                </form>
+            </div>
+            
+        <div class="row"> 
+            <div class="col-xs-6 col-xs-offset-3">
+                
+                <section id="results"></section>
+                
+            </div>
+        </div>
         
-        <section id="search">
-            <button onclick="handlers.getWikiTitles()">Search Wiki</button>
-            <input id="searchInput" type="text"/>    
-        </section>
-        
-        <section id="results">
-        </section>
-        
+        </div>
     </body>
 </html>
